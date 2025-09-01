@@ -1,0 +1,291 @@
+body{
+    background-color: rgb(46, 45, 45);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+    background-color: rgb(11, 11, 14);
+    color: white;
+    font-size: 16px;
+}
+header .logo{
+    width: 100px;
+    height: auto;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+
+header .texto-header{
+	font-size: 18px;
+	font-weight: 500;
+	font-style: italic;
+}
+
+header .texto-header h1{
+	font-size: 18px;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.bio{
+    background-image: url('fundo-banner.png');
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-size: cover;
+    color: white;
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.bio .conteudo{
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.bio .conteudo .img{
+	width: 100%;
+}
+
+.bio .conteudo .img img{
+	width: auto;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.bio .conteudo .texto{
+	width: 80%;
+	color: white;
+	margin: -50px 0 50px 0;
+	
+}
+
+.bio .conteudo .texto h2{
+	font-size: 35px;
+	font-weight: 500;
+	font-style: italic;
+	margin-bottom: 65px;
+	position: relative;
+	padding-top: 50px;
+}
+
+.bio .conteudo .texto h2:after{
+	width: 140px;
+	height: 5px;
+	background-color: white;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	content:' ';
+}
+
+.bio .conteudo .descricao{
+	margin-bottom: 60px;
+	width: 100%;
+	display: block;
+}
+.bio .conteudo .descricao p {
+	line-height: 26px;
+	width: 100%;
+	display: block;
+	text-align: justify;
+	font-size: 1.25rem;
+	color: #fff;
+}
+.bio .conteudo .texto .contatos-header{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.bio .conteudo .texto .contatos-header .btn{
+    background-color: #25D366;
+    color: rgb(2, 0, 0);
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.bio .conteudo .texto .contatos-header .btn:hover{
+    background-color: #099715;
+    border: 3px solid rgb(10, 48, 13);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px){
+	header{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
+		padding: 10px;
+		background-color: rgb(11, 11, 14);
+		color: white;
+		font-size: 24px;
+	}
+	header .logo{
+		width: 100px;
+		height: auto;
+		border-radius: 30%;
+		border: 2px solid white;
+	}
+	header .texto-header h1{
+		font-size: 32px;
+	}
+	.bio .conteudo{
+		width: 100%;
+		display: inline-flex;
+	}
+	.bio .conteudo .img{
+		width: 40%;
+		}
+	.bio .conteudo .texto{
+		width: 45%;
+		margin: 0 0 0 -60px;
+	}
+	.bio .conteudo .texto h2{
+		padding-top: 25px;
+		font-size: 48px;
+	}
+}
+.eventos{
+	background: #03878a;
+	background: -webkit-linear-gradient(0deg, rgba(3, 135, 138, 1) 0%, rgba(0, 0, 0, 1) 82%);
+	background: -moz-linear-gradient(0deg, rgba(3, 135, 138, 1) 0%, rgba(0, 0, 0, 1) 82%);
+	background: linear-gradient(0deg, rgba(3, 135, 138, 1) 0%, rgba(0, 0, 0, 1) 82%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03878A", endColorstr="#000000", GradientType=0);
+	padding: 5px 0;
+	width: 100%;
+	display: block;
+}
+
+.eventos .conteudo{
+	width: 90%;
+	display: block;
+    margin: 0 auto;
+}
+.eventos .conteudo .itens{
+	width: 100%;
+	display: block;
+}
+
+.eventos .conteudo .itens .item{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-bottom: 50px;
+}
+.eventos .conteudo .itens .item:last-child{
+	margin-bottom: 0px;
+}
+
+.eventos .conteudo .itens .item .img{
+	width: 100%;
+}
+
+.eventos .conteudo .itens .item .img img{
+	width: auto;
+	max-width: 80%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 45px;
+}
+
+.eventos .conteudo .itens .item .texto{
+	width: 90%;
+	margin: 0 0 50px 0;	
+	color: #fff;
+    font-size: 20px;
+}
+.eventos .conteudo h2{
+    font-size: 35px;
+	font-weight: 500;
+	font-style: italic;
+	margin-bottom: 65px;
+	position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.eventos .conteudo .itens .item  .texto h3{
+	font-size: 24px;
+	font-weight: 500;
+	font-style: italic;
+	margin-bottom: 45px;
+	position: relative;
+	color: #fff;
+}
+.eventos .conteudo .itens .item .texto h3:after{
+	width: 140px;
+	height: 5px;
+	color: #ffffff;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	content:' ';	
+}
+h4{
+	margin: 15px 0;
+}
+
+.eventos .conteudo .itens .item .descricao{
+	width: 100%;
+	display: block;
+	text-align: justify;	
+	color: #fff;
+}
+.eventos .conteudo .itens .item .descricao p {
+	line-height: 26px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	width: 100%;
+	display: block;
+	color: #000;	
+	color: #fff;
+}
+
+@media only screen and (min-width: 1024px){
+	.eventos .conteudo .itens .item .img{
+		width: 50%;
+		}
+	.eventos .conteudo .itens .item .texto{
+		width: 45%;
+		margin-bottom: 0px;		
+		color: #fff;
+	}
+	.eventos .conteudo h2{
+    	font-size: 48px;
+	}
+	.eventos .conteudo .itens .item:nth-child(2n+2) .img{
+		order: 0;
+	}
+	.eventos .conteudo .itens .item:nth-child(2n+2) .texto{
+		order: 1;
+	}
+}
+footer{
+	background-color: rgb(11, 11, 14);
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-size: 16px;
+}
